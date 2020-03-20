@@ -48,7 +48,7 @@ function get_ext_ipaddr() {
       --silent\
       --connect-timeout ${TIMEOUT}\
       --max-time $((${TIMEOUT}*2))\
-      http://mgmt.unzoner.com)
+       ip.sb)
     echo ${extip} | head -n 1 | awk '{print $1}'
 }
 
